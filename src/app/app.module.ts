@@ -7,6 +7,7 @@ import { LoginComponent } from './login/login.component';
 import { RestoAddComponent } from './resto-add/resto-add.component';
 import { RestoUpdateComponent } from './resto-update/resto-update.component';
 import { RestoListComponent } from './resto-list/resto-list.component';
+import { RegisterComponent } from './register/register.component';
 
 @NgModule({
   declarations: [
@@ -14,7 +15,8 @@ import { RestoListComponent } from './resto-list/resto-list.component';
     LoginComponent,
     RestoAddComponent,
     RestoUpdateComponent,
-    RestoListComponent
+    RestoListComponent,
+    RegisterComponent
   ],
   imports: [
     BrowserModule,
