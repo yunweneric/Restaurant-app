@@ -8,6 +8,7 @@ import { RestoAddComponent } from './resto-add/resto-add.component';
 import { RestoUpdateComponent } from './resto-update/resto-update.component';
 import { RestoListComponent } from './resto-list/resto-list.component';
 import { RegisterComponent } from './register/register.component';
+import { PagenotfoundComponent } from './pagenotfound/pagenotfound.component';
 
 @NgModule({
   declarations: [
@@ -16,7 +17,8 @@ import { RegisterComponent } from './register/register.component';
     RestoAddComponent,
     RestoUpdateComponent,
     RestoListComponent,
-    RegisterComponent
+    RegisterComponent,
+    PagenotfoundComponent
   ],
   imports: [
     BrowserModule,
