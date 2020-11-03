@@ -119,6 +119,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "Restaurant-app"
+    }
+  },
+  "defaultProject": "Restaurant-app",
+  "cli": {
+    "analytics": false
+  }
 }
