@@ -5,6 +5,7 @@ import { HomeComponent } from './home/home.component';
 import { LoginComponent } from './login/login.component';
 import { PagenotfoundComponent } from './pagenotfound/pagenotfound.component';
 import { RegisterComponent } from './register/register.component';
+import { RestoAddComponent } from './resto-add/resto-add.component';
 import { RestoListComponent } from './resto-list/resto-list.component';
 import { RestoUpdateComponent } from './resto-update/resto-update.component';
 
@@ -15,6 +16,7 @@ const routes: Routes = [
   {path:"list", component:RestoListComponent},
   {path:"update", component:RestoUpdateComponent},
   {path:"home", component:HomeComponent},
+  {path:"add", component:RestoAddComponent},
   {path:"**", component:PagenotfoundComponent},
 ];
 
