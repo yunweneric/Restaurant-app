@@ -3,7 +3,9 @@
     margin-top: 100px;
 } */
 /* @import "src/assets/sharedcss.css";  */
-
+.stuff{
+    display: flex;
+}
 table.dataTable {
   clear: both;
   margin-top: 6px !important;
