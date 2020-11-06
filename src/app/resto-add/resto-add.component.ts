@@ -10,6 +10,7 @@ import { RestoService } from '../resto.service';
 export class RestoAddComponent implements OnInit {
   constructor(private resto: RestoService) {}
   ngOnInit(): void {}
+  alert: boolean = false;
 
   addresto = new FormGroup({
     name: new FormControl(''),
@@ -18,7 +19,10 @@ export class RestoAddComponent implements OnInit {
   });
   collectResto() {
     this.resto.saveResto(this.addresto.value).subscribe((data) => {
-      console.log('data', data);
+      // console.log('data', data);
     });
+    this.alert = true;
+    this.addresto.reset({})
+
   };
 }

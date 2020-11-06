@@ -1,4 +1,4 @@
-<form [formGroup]="addresto" (ngSubmit) = "collectResto()">
+<form [(formGroup)]="addresto" (ngSubmit)="collectResto()">
     <div class="form-group">
         <label for="name">Name</label>
         <input type="text" class="form-control" id="name" aria-describedby="name" placeholder="Enter name"
@@ -13,4 +13,14 @@
         <input type="text" class="form-control" id="address" placeholder="Address" formControlName="address">
     </div>
     <button type="submit" class="btn btn-primary">Submit</button>
+    <div class="alert alert-success my-5" role="alert" *ngIf="alert" >
+        <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        <h4 class="alert-heading">Well done!</h4>
+        <p>Aww yeah, you successfully add your new restaurant {{addresto.value.name}} and this took you rew steps to do. Everything was sucessfully done</p>
+        <hr>
+        <p class="mb-0">Whenever you need to, be sure to use proper names, emails and address to keep things nice and tidy.</p>
+       
+    </div>
 </form>

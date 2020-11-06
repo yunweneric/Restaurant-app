@@ -53,6 +53,30 @@
       "email": "yunweneric@yahoo..com",
       "address": "Douala",
       "id": 9
+    },
+    {
+      "name": "Eric",
+      "email": "yunweneric@yahoo..com",
+      "address": "Loum",
+      "id": 10
+    },
+    {
+      "name": "Meme Juice",
+      "email": "ninaliasmael@gmail.com",
+      "address": "Bamenda",
+      "id": 11
+    },
+    {
+      "name": "White house ",
+      "email": "fomonyuy@tutanota.com",
+      "address": "Akwa",
+      "id": 12
+    },
+    {
+      "name": "Canary Eats",
+      "email": "ninaliasmael@gmail.com",
+      "address": "Bonaberi",
+      "id": 13
     }
   ]
 }
