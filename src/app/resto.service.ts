@@ -14,4 +14,7 @@ export class RestoService {
     // this.http.post(this.url, data)
     return this.http.post(this.url, data);
   };
+  DeleteResto(id){
+    return this.http.delete(`${this.url}/${id}`);
+  };
 }

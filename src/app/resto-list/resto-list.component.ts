@@ -8,13 +8,18 @@ import { RestoService } from '../resto.service';
 })
 export class RestoListComponent implements OnInit {
   constructor(private resto: RestoService) {}
-  collection = {};
+  collection: any = [];
   ngOnInit(): void {
-    this.resto.getdata().subscribe(resto => {
-      console.log(resto);
+    this.resto.getdata().subscribe((resto) => {
+      // console.log(resto);
       this.collection = resto;
       // console.log((this.collection));
-      
+    });
+  }
+  deleteResto(item) {
+    this.collection.splice(item-1, 1)
+    this.resto.DeleteResto(item).subscribe((resto) => {
+      console.log("result", resto)
     });
   }
 }

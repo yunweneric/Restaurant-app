@@ -11,6 +11,10 @@ import { RegisterComponent } from './register/register.component';
 import { PagenotfoundComponent } from './pagenotfound/pagenotfound.component';
 import { HttpClientModule } from '@angular/common/http';
 import { HomeComponent } from './home/home.component';
+import { SidebarComponent } from './sidebar/sidebar.component';
+import { TopbarComponent } from './topbar/topbar.component';
+// import { AngularFontAwesomeModule } from 'angular-font-awesome';
+
 
 @NgModule({
   declarations: [
@@ -22,13 +26,16 @@ import { HomeComponent } from './home/home.component';
     RegisterComponent,
     PagenotfoundComponent,
     HomeComponent,
+    SidebarComponent,
+    TopbarComponent,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,
     ReactiveFormsModule,
-    FormsModule
+    FormsModule,
+    // AngularFontAwesomeModule,
   ],
   providers: [],
   bootstrap: [AppComponent],

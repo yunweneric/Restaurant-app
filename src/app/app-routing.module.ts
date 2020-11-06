@@ -8,6 +8,7 @@ import { RegisterComponent } from './register/register.component';
 import { RestoAddComponent } from './resto-add/resto-add.component';
 import { RestoListComponent } from './resto-list/resto-list.component';
 import { RestoUpdateComponent } from './resto-update/resto-update.component';
+import { SidebarComponent } from './sidebar/sidebar.component';
 
 const routes: Routes = [
   {path:"", redirectTo :"/home", pathMatch: "full"},
@@ -17,6 +18,7 @@ const routes: Routes = [
   {path:"update", component:RestoUpdateComponent},
   {path:"home", component:HomeComponent},
   {path:"add", component:RestoAddComponent},
+  {path:"sidebar", component:SidebarComponent},
   {path:"**", component:PagenotfoundComponent},
 ];
 
