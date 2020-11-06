@@ -1,1 +1,27 @@
-<p>resto-list works!</p>
+<!-- <p>List resto</p> -->
+
+<!-- <p *ngFor = 'let resto of collection;'>{{resto.name}}</p> -->
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>#</th>
+            <th>Name</th>
+            <th>Email</th>
+            <th>Address</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor = 'let resto of collection;'>
+            <td scope="row">{{resto.id}}</td>
+            <td scope="row">{{resto.name}}</td>
+            <td scope="row">{{resto.email}}</td>
+            <td scope="row">{{resto.address}}</td>
+        </tr>
+        <tr>
+            <td scope="row"></td>
+            <td></td>
+            <td></td>
+        </tr>
+    </tbody>
+</table>

@@ -9,6 +9,8 @@ import { RestoUpdateComponent } from './resto-update/resto-update.component';
 import { RestoListComponent } from './resto-list/resto-list.component';
 import { RegisterComponent } from './register/register.component';
 import { PagenotfoundComponent } from './pagenotfound/pagenotfound.component';
+import { HttpClientModule } from '@angular/common/http';
+import { HomeComponent } from './home/home.component';
 
 @NgModule({
   declarations: [
@@ -18,11 +20,13 @@ import { PagenotfoundComponent } from './pagenotfound/pagenotfound.component';
     RestoUpdateComponent,
     RestoListComponent,
     RegisterComponent,
-    PagenotfoundComponent
+    PagenotfoundComponent,
+    HomeComponent,
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
