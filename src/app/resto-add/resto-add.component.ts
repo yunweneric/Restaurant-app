@@ -5,7 +5,7 @@ import { RestoService } from '../resto.service';
 @Component({
   selector: 'app-resto-add',
   templateUrl: './resto-add.component.html',
-  styleUrls: ['./resto-add.component.css'],
+  styleUrls: ['./resto-add.component.css','../shared/sharedcss.css'],
 })
 export class RestoAddComponent implements OnInit {
   constructor(private resto: RestoService) {}

@@ -1,3 +1,10 @@
+.stuffs{
+  display: flex;
+}
+.second{
+  width: 100%;
+}
+
 .bg-login-image {
   background: url('src/assets/images/undraw_authentication_fsn5.png');
   background-position: center;
