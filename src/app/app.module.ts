@@ -13,6 +13,7 @@ import { HttpClientModule } from '@angular/common/http';
 import { HomeComponent } from './home/home.component';
 import { SidebarComponent } from './sidebar/sidebar.component';
 import { TopbarComponent } from './topbar/topbar.component';
+import { ForgotpwdComponent } from './forgotpwd/forgotpwd.component';
 // import { AngularFontAwesomeModule } from 'angular-font-awesome';
 
 
@@ -28,6 +29,7 @@ import { TopbarComponent } from './topbar/topbar.component';
     HomeComponent,
     SidebarComponent,
     TopbarComponent,
+    ForgotpwdComponent,
   ],
   imports: [
     BrowserModule,

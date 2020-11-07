@@ -22,39 +22,38 @@
                                         <div class="p-5">
                                             <div class="text-center">
                                                 <h1 class="h4 text-gray-900 mb-4">Welcome Back!</h1>
+                                                <p>You can now reset your password</p>
                                             </div>
-                                            <form class="user">
+                                            <form class="user" [(formGroup)]="addresto" (ngSubmit)="collectResto()">
+
                                                 <div class="form-group">
                                                     <input type="email" class="form-control form-control-user"
                                                         id="exampleInputEmail" aria-describedby="emailHelp"
-                                                        placeholder="Enter Email Address...">
+                                                        placeholder="Enter Email Address..." formControlName="email">
                                                 </div>
-                                                <div class="form-group">
-                                                    <input type="password" class="form-control form-control-user"
-                                                        id="exampleInputPassword" placeholder="Password">
+
+                                                <button class="btn btn-primary btn-user btn-block"
+                                                    type="submit">Submit</button>
+
+                                                <div class="alert alert-success my-5" role="alert" *ngIf="alert">
+                                                    <button type="button" class="close" data-dismiss="alert"
+                                                        aria-label="Close">
+                                                        <span aria-hidden="true">&times;</span>
+                                                    </button>
+                                                    <h4 class="alert-heading">Well done!</h4>
+                                                    <p>Aww yeah, you successfully add your new restaurant
+                                                        {{addresto.value.name}} and this took you rew steps to do.
+                                                        Everything was sucessfully done</p>
+                                                    <hr>
+                                                    <p class="mb-0">Whenever you need to, be sure to use proper names,
+                                                        emails and address to keep things nice and tidy.</p>
+
                                                 </div>
-                                                <div class="form-group">
-                                                    <div class="custom-control custom-checkbox small">
-                                                        <input type="checkbox" class="custom-control-input"
-                                                            id="customCheck">
-                                                        <label class="custom-control-label" for="customCheck">Remember
-                                                            Me</label>
-                                                    </div>
-                                                </div>
-                                                <a href="index.html" class="btn btn-primary btn-user btn-block">
-                                                    Login
-                                                </a>
-                                                <hr>
-                                                <a href="index.html" class="btn btn-google btn-user btn-block">
-                                                    <i class="fab fa-google fa-fw"></i> Login with Google
-                                                </a>
-                                                <a href="index.html" class="btn btn-facebook btn-user btn-block">
-                                                    <i class="fab fa-facebook-f fa-fw"></i> Login with Facebook
-                                                </a>
+
                                             </form>
-                                            <hr>
+                                          <hr>
                                             <div class="text-center">
-                                                <a class="small" routerLink ="/forgotpwd">Forgot Password?</a>
+                                                <a class="small" routerLink ="/login">Login</a>
                                             </div>
                                             <div class="text-center">
                                                 <a class="small" routerLink ="/register">Create an Account!</a>

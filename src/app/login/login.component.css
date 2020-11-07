@@ -6,9 +6,9 @@
 }
 
 .bg-login-image {
-  background: url('src/assets/images/undraw_authentication_fsn5.png');
+  background: url(https://images.unsplash.com/photo-1594295891644-e57d351ea07d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=634&q=80);
   background-position: center;
-  background-size: 400px 300px;
+  background-size: cover;
   background-repeat: no-repeat;
 }
 
