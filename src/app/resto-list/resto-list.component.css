@@ -6,6 +6,9 @@
 .stuff{
     display: flex;
 }
+.second{
+  width: 100%;
+}
 table.dataTable {
   clear: both;
   margin-top: 6px !important;
