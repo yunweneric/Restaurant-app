@@ -23,7 +23,8 @@
                                         <th>Name</th>
                                         <th>Email</th>
                                         <th>Address</th>
-                                        <th>Operation</th>
+                                        <th>Delete</th>
+                                        <th>Update</th>
                                     </tr>
                                 </thead>
                                 <tfoot>
@@ -32,17 +33,19 @@
                                         <th>Name</th>
                                         <th>Email</th>
                                         <th>Address</th>
-                                        <th>Operation</th>
+                                        <th>Delete</th>
+                                        <th>Update</th>
 
                                     </tr>
                                 </tfoot>
                                 <tbody>
                                     <tr *ngFor="let item of collection">
-                                        <td >{{item.id}}</td>
+                                        <td>{{item.id}}</td>
                                         <td>{{item.name}}</td>
                                         <td>{{item.email}}</td>
                                         <td>{{item.address}}</td>
-                                        <td><i class="fas fa-trash-alt"></i></td>
+                                        <td><i class="fas fa-trash-alt" (click)="deleteResto(item.id)"></i></td>
+                                        <td><a routerLink = '/update/{{item.id}}'><i class="fas fa-pen-alt"></i></a></td>
                                     </tr>
                                 </tbody>
                             </table>

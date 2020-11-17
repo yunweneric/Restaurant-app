@@ -16,7 +16,7 @@ const routes: Routes = [
   {path:"register", component:RegisterComponent},
   {path:"login", component:LoginComponent},
   {path:"list", component:RestoListComponent},
-  {path:"update", component:RestoUpdateComponent},
+  {path:"update/:{{item.id}}", component:RestoUpdateComponent},
   {path:"home", component:HomeComponent},
   {path:"add", component:RestoAddComponent},
   {path:"sidebar", component:SidebarComponent},
@@ -25,7 +25,7 @@ const routes: Routes = [
 ];
 
 @NgModule({
-  imports: [RouterModule.forRoot(routes)],
+  imports: [RouterModule.forRoot(routes, { relativeLinkResolution: 'legacy' })],
   exports: [RouterModule]
 })
 export class AppRoutingModule { }
