@@ -21,6 +21,6 @@ export class RestoService {
     return this.http.get(`${this.url}/${id}`)
   }
   updateResto(id, data){
-    return this.http.get(`${this.url}/${id}`, data)
+    return this.http.put(`${this.url}/${id}`, data)
   }
 }

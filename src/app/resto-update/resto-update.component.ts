@@ -13,6 +13,8 @@ export class RestoUpdateComponent implements OnInit {
     email: new FormControl(''),
     address: new FormControl(''),
   });
+  alert: boolean = false;
+
   constructor(private router: ActivatedRoute, private resto: RestoService) {}
   ngOnInit(): void {
     console.log(this.router.snapshot.params.id);
@@ -28,12 +30,13 @@ export class RestoUpdateComponent implements OnInit {
     
   }
   collectResto(){
-    console.log(this.editResto.value);
+    // console.log(this.editResto.value);
     this.resto.updateResto(this.router.snapshot.params.id, this.editResto.value).subscribe(result =>{
-      console.log(result);
+      // console.log(result);
+      this.alert = true;
+
     })
   }
-  alert: boolean = false;
 
  
   // collectResto() {
