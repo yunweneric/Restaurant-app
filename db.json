@@ -7,42 +7,6 @@
       "email": "kfc@gmail.com"
     },
     {
-      "id": 2,
-      "name": "AMD Restaurant",
-      "address": "Douala diedo",
-      "email": "amd@gmail.com"
-    },
-    {
-      "id": 3,
-      "name": "CFC Restaurant",
-      "address": "Limbe ",
-      "email": "cfc@gmail.com"
-    },
-    {
-      "id": 4,
-      "name": "Ado Restaurant",
-      "address": "Douala ",
-      "email": "ado@gmail.com"
-    },
-    {
-      "id": 5,
-      "name": "Goo Restaurant",
-      "address": "Buea ",
-      "email": "goo@gmail.com"
-    },
-    {
-      "id": 6,
-      "name": "Meloc Restaurant",
-      "address": "Ndop",
-      "email": "meloc@gmail.com"
-    },
-    {
-      "name": "Diedofine Restaurant",
-      "address": "Kumba",
-      "email": "kfc@gmail.com",
-      "id": 7
-    },
-    {
       "name": "Dophine Restaurant",
       "address": "Makenene ",
       "email": "dofin@gmail.com",
@@ -65,18 +29,6 @@
       "email": "ninaliasmael@gmail.com",
       "address": "Bamenda",
       "id": 11
-    },
-    {
-      "name": "White house ",
-      "email": "fomonyuy@tutanota.com",
-      "address": "Akwa",
-      "id": 12
-    },
-    {
-      "name": "Canary Eats",
-      "email": "ninaliasmael@gmail.com",
-      "address": "Bonaberi",
-      "id": 13
     }
   ]
 }

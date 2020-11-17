@@ -16,7 +16,7 @@ const routes: Routes = [
   {path:"register", component:RegisterComponent},
   {path:"login", component:LoginComponent},
   {path:"list", component:RestoListComponent},
-  {path:"update/:{{item.id}}", component:RestoUpdateComponent},
+  {path:"update/:id", component:RestoUpdateComponent},
   {path:"home", component:HomeComponent},
   {path:"add", component:RestoAddComponent},
   {path:"sidebar", component:SidebarComponent},
