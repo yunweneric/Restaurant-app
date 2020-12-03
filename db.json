@@ -1,34 +1,16 @@
 {
   "restaurants": [
     {
-      "id": 1,
-      "name": "KFC Restaurant",
-      "address": "Bamenda ",
-      "email": "kfc@gmail.com"
-    },
-    {
-      "name": "Dophine Restaurant",
-      "email": "dofin@gmail.com",
-      "address": "Limbe",
-      "id": 8
-    },
-    {
-      "name": "Roy resto",
-      "email": "yunweneric@yahoo..com",
-      "address": "Douala",
-      "id": 9
-    },
-    {
-      "name": "Eric",
+      "name": "Amir",
       "email": "yunweneric@yahoo..com",
       "address": "Loum",
       "id": 10
     },
     {
-      "name": "Meme Juice",
-      "email": "ninaliasmael@gmail.com",
-      "address": "Douala",
-      "id": 11
+      "name": "Brandone",
+      "email": "yunweneric@gmail.com",
+      "address": "Bali, 4550",
+      "id": 13
     }
   ]
 }
